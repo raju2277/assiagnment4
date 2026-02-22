@@ -29,11 +29,14 @@ function interviewCount(){
     totalInterview.innerText=interviewCardLength-1;
 
     if(interviewCardLength>1){
-    noJobs.classList.add('hidden')
+    noJobs.classList.add('hidden');
+    //interviewCard.classList.add('grid','md:grid-cols-2')
+
         
     }
     else{
         noJobs.classList.remove('hidden')
+       //interviewCard.classList.remove('grid','md:grid-cols-2')
     }
 }
 function rejectedCount(){

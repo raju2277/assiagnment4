@@ -29,6 +29,21 @@ cardContainer.addEventListener('click',function(item){
                 interviewCard.appendChild(cloneInterviewParent);
                 interviewCount();
              }
+
+
+
+             //delete the existed same file from reject section
+             const rejectParent= item.target.parentElement.parentElement.parentElement;
+             //get the parrent id
+             const cardId2=rejectParent.id;
+             //already available
+             const alrdyAvailable=rejectedCard.querySelector("#"+cardId2);
+             //check id exist or not
+             if(alrdyAvailable){
+              const deleteParent= document.getElementById('delete-card');
+                deleteParent.appendChild(alrdyAvailable);
+                rejectedCount();
+             }
              
         }
         else if(item.target.id === "rejected"){
@@ -56,6 +71,21 @@ cardContainer.addEventListener('click',function(item){
                 rejectedCard.appendChild(cloneRejectParent);
                 rejectedCount();
              }
+
+
+             //delete the existed same file from reject section
+             const interviewParent= item.target.parentElement.parentElement.parentElement;
+             //get the parrent id
+             const cardId2=interviewParent.id;
+             //already available
+             const alrdyAvailable=interviewCard.querySelector("#"+cardId2);
+             //check id exist or not
+             if(alrdyAvailable){
+              const deleteParent= document.getElementById('delete-card');
+                deleteParent.appendChild(alrdyAvailable);
+                interviewCount();
+             }
+
 
         }
         else if(item.target.id === "delete"){

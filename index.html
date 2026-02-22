@@ -10,10 +10,10 @@
     
 </head>
 <body>
-    <header class="container w-3/4 mx-auto pt-10">
+    <header class="container w-3/4 mx-auto pt-10 ">
         <section class="">
             <h1 class="text-3xl text-[#002C5C] font-bold">Job Application Tracker</h1>
-            <div class="pt-5 grid grid-cols-3">
+            <div class="pt-5 grid grid-cols-3 sticky">
                 <div class="card card-border bg-base-100 w-96 shadow-sm rounded-sm">
                     <div class="card-body">
                         <h2  class="card-title text-[#323B49]">Total</h2>
@@ -47,9 +47,9 @@
         <div class="tabs tabs-lift">
         <input type="radio" name="my_tabs_3" class="h-auto px-8 py-3 tab checked:bg-[#3B82F6] checked:text-white" aria-label="All" checked="checked"/>
         <div  class="tab-content bg-base-100 border-base-300 p-6">
-            <div id="card-container" class="card w-full bg-base-100 shadow-sm grid md:grid-cols-2">
+            <div id="card-container" class="card w-full bg-base-100 shadow-sm grid md:grid-cols-2 ">
                 <div id="" class="card-body">
-                    <div id="card-one" class="flex justify-between shadow-sm p-5">
+                    <div id="card-one" class="flex justify-between shadow-sm p-5 border rounded-sm">
                     <div class="card-list ">
                         <div class="card-info space-y-3">
                             <h2 class="text-2xl text-[#002C5C] font-bold">Mobile First Corp</h2>
@@ -179,14 +179,20 @@
                 <p class="text-center text-gray-400">Check back soon for new job opportunities</p>
             </div>
         </div>
+
+        <!-- deleted section -->
+        <input type="radio" name="my_tabs_3" class="h-auto hidden px-8 py-3 tab checked:bg-[#3B82F6] checked:text-white font-semibold" aria-label="Rejected" />
+        <div id="" class="tab-content bg-base-100 border-base-300 p-6">
+             <div id="delete-card" class="">
+
+             </div>
+        </div>
+        
         </div>
         </div>
 
      </section>
 
-     <div id="delete-card" class="hidden">
-
-     </div>
 
     
      <script src="./toggle.js"></script>

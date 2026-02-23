@@ -136,16 +136,7 @@ interviewCardToggle.addEventListener('click',function(item){
               hiddenButton.classList.add('hidden');
               rejectButton.classList.remove('hidden');
               }
-         else if(item.target.id === "delete"){
-           //rejected div append
-            const deleteParent= item.target.parentElement.parentElement.parentElement;
-             //get the parrent id
-             const deletedCard=Document.getElementById('delete-card')
-             deletedCard.appendChild(deleteParent);
-             interviewCount();
-             rejectedCount();
-           
-        }
+        
         
         
        

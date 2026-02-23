@@ -21,7 +21,7 @@
     
 </head>
 <body>
-    <header class="container w-3/4 mx-auto pt-10 ">
+    <header class="container sm:w-3/4 mx-auto pt-10 ">
         <section class="">
             <h1 class="text-3xl text-[#002C5C] font-bold">Job Application Tracker</h1>
             <div class="pt-5 grid grid-cols-3 gap-2 sm:gap-4 ">
@@ -49,27 +49,28 @@
 
     <!-- jobs section -->
      <section class="container mx-auto sm:w-3/4  pl-5 pt-10" >
-        <div class="flex justify-between">
+        <div class="flex justify-between px-4">
             <h2 class="text-xl font-semibold text-[#002C5C]">Available Jobs</h2>
             <p class="text-[#64748B] text-sm font-semibold"><span id="available">8</span> Jobs</p>
         </div>
-        <div class="card-section mt-6">
+        <div class="card-section mt-6 ">
             <!-- name of each tab group should be unique -->
         <div class="tabs tabs-lift">
         <input type="radio" name="my_tabs_3" class="h-auto px-8 py-3 tab checked:bg-[#3B82F6] checked:text-white" aria-label="All" checked="checked"/>
         <div  class="tab-content bg-base-100 border-base-300 p-6">
             <div id="card-container" class="card w-full bg-base-100 shadow-sm grid md:grid-cols-2 ">
+                <!-- card one -->
                 <div id="" class="card-body">
                     <div id="card-one" class="flex justify-between shadow-sm p-5 border rounded-sm">
                     <div class="card-list ">
                         <div class="card-info space-y-3">
-                            <h2 class="text-2xl text-[#002C5C] font-bold">Mobile First Corp1</h2>
-                            <h3 class="text-xl text-[#64748B]">React Native Devloper</h3>
-                            <p class="text-[#64748B]"> Remote Full-time • $130,000 - $175,000</p>
+                            <h2 class="text-2xl text-[#002C5C] font-bold">Google</h2>
+                            <h3 class="text-xl text-[#64748B]">Frontend Developer</h3>
+                            <p class="text-[#64748B]"> Full-time — $120,000–$150,000/year</p>
                             <button class="btn  btn-sm  current-btn ">Not Applicable</button>
                             <button  class="btn btn-outline btn-success border-none hidden hidden-btn shadow-sm">Interview</button>
                             <button  class="btn btn-outline btn-error border-none hidden rejected-btn shadow-sm">Rejected</button>
-                            <p class="text-[#323B49] text-[15px]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                            <p class="text-[#323B49] text-[15px]">Develop responsive web interfaces using modern frameworks while collaborating with designers and engineers to deliver scalable digital experiences.</p>
 
                         </div>                        
                         <div class="mt-6">
@@ -82,17 +83,18 @@
                     </div>
                    
                 </div>
+                <!-- card two -->
                 <div id="" class="card-body">
-                    <div id="card-one" class="flex justify-between shadow-sm p-5 border rounded-sm">
+                    <div id="card-two" class="flex justify-between shadow-sm p-5 border rounded-sm">
                     <div class="card-list ">
                         <div class="card-info space-y-3">
-                            <h2 class="text-2xl text-[#002C5C] font-bold">Mobile First Corp1</h2>
-                            <h3 class="text-xl text-[#64748B]">React Native Devloper</h3>
-                            <p class="text-[#64748B]"> Remote Full-time • $130,000 - $175,000</p>
+                            <h2 class="text-2xl text-[#002C5C] font-bold">Microsoft</h2>
+                            <h3 class="text-xl text-[#64748B]">Software Engineer</h3>
+                            <p class="text-[#64748B]"> Full-time — $115,000–$145,000/year</p>
                             <button class="btn  btn-sm  current-btn ">Not Applicable</button>
                             <button  class="btn btn-outline btn-success border-none hidden hidden-btn shadow-sm">Interview</button>
                             <button  class="btn btn-outline btn-error border-none hidden rejected-btn shadow-sm">Rejected</button>
-                            <p class="text-[#323B49] text-[15px]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                            <p class="text-[#323B49] text-[15px]">Design and maintain cloud-based applications, write efficient code, and participate in architectural decisions to improve system performance.</p>
 
                         </div>                        
                         <div class="mt-6">
@@ -105,18 +107,18 @@
                     </div>
                    
                 </div>
-
+                <!-- card three -->
                 <div id="" class="card-body">
                     <div id="card-three" class="flex justify-between shadow-sm p-5 border rounded-sm">
                     <div class="card-list ">
                         <div class="card-info space-y-3">
-                            <h2 class="text-2xl text-[#002C5C] font-bold">Mobile First Corp3</h2>
-                            <h3 class="text-xl text-[#64748B]">React Native Devloper</h3>
-                            <p class="text-[#64748B]"> Remote Full-time • $130,000 - $175,000</p>
+                            <h2 class="text-2xl text-[#002C5C] font-bold">Amazon</h2>
+                            <h3 class="text-xl text-[#64748B]">Backend Developer</h3>
+                            <p class="text-[#64748B]">Full-time — $110,000–$140,000/year</p>
                             <button class="btn  btn-sm  current-btn ">Not Applicable</button>
                             <button  class="btn btn-outline btn-success border-none hidden hidden-btn shadow-sm">Interview</button>
                             <button  class="btn btn-outline btn-error border-none hidden rejected-btn shadow-sm">Rejected</button>
-                            <p class="text-[#323B49] text-[15px]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                            <p class="text-[#323B49] text-[15px]">Build robust APIs and manage distributed systems ensuring reliability, scalability, and secure data handling across services.</p>
 
                         </div>                        
                         <div class="mt-6">
@@ -129,18 +131,114 @@
                     </div>
                    
                 </div>
-
+                <!-- card four -->
                 <div id="" class="card-body">
                     <div id="card-four" class="flex justify-between shadow-sm p-5 border rounded-sm">
                     <div class="card-list ">
                         <div class="card-info space-y-3">
-                            <h2 class="text-2xl text-[#002C5C] font-bold">Mobile First Corp4</h2>
+                            <h2 class="text-2xl text-[#002C5C] font-bold">Meta</h2>
                             <h3 class="text-xl text-[#64748B]">React Native Devloper</h3>
-                            <p class="text-[#64748B]"> Remote Full-time • $130,000 - $175,000</p>
+                            <p class="text-[#64748B]">Full-time — $125,000–$155,000/year</p>
                             <button class="btn  btn-sm  current-btn ">Not Applicable</button>
                             <button  class="btn btn-outline btn-success border-none hidden hidden-btn shadow-sm">Interview</button>
                             <button  class="btn btn-outline btn-error border-none hidden rejected-btn shadow-sm">Rejected</button>
-                            <p class="text-[#323B49] text-[15px]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                            <p class="text-[#323B49] text-[15px]">Create interactive user interfaces, optimize performance, and collaborate with  teams to enhance platform engagement.</p>
+
+                        </div>                        
+                        <div class="mt-6">
+                            <button id="interview" class="btn btn-outline btn-success">Interview</button>
+                            <button id="rejected" class="btn btn-outline btn-error">Rejected</button>
+                      </div>
+
+                    </div>
+                    <span class=""><button id="delete" class="btn"><i class="fa-solid fa-trash"></i></button></span>
+                    </div>
+                   
+                </div>
+                <!-- card five -->
+                <div id="" class="card-body">
+                    <div id="card-five" class="flex justify-between shadow-sm p-5 border rounded-sm">
+                    <div class="card-list ">
+                        <div class="card-info space-y-3">
+                            <h2 class="text-2xl text-[#002C5C] font-bold">Tesla</h2>
+                            <h3 class="text-xl text-[#64748B]">Full Stack Developer</h3>
+                            <p class="text-[#64748B]">Full-time — $105,000–$135,000/year</p>
+                            <button class="btn  btn-sm  current-btn ">Not Applicable</button>
+                            <button  class="btn btn-outline btn-success border-none hidden hidden-btn shadow-sm">Interview</button>
+                            <button  class="btn btn-outline btn-error border-none hidden rejected-btn shadow-sm">Rejected</button>
+                            <p class="text-[#323B49] text-[15px]">Develop end-to-end applications integrating frontend and backend systems while maintaining efficiency, and code quality.</p>
+
+                        </div>                        
+                        <div class="mt-6">
+                            <button id="interview" class="btn btn-outline btn-success">Interview</button>
+                            <button id="rejected" class="btn btn-outline btn-error">Rejected</button>
+                      </div>
+
+                    </div>
+                    <span class=""><button id="delete" class="btn"><i class="fa-solid fa-trash"></i></button></span>
+                    </div>
+                   
+                </div>
+                <!-- card six -->
+                <div id="" class="card-body">
+                    <div id="card-six" class="flex justify-between shadow-sm p-5 border rounded-sm">
+                    <div class="card-list ">
+                        <div class="card-info space-y-3">
+                            <h2 class="text-2xl text-[#002C5C] font-bold">Netflix</h2>
+                            <h3 class="text-xl text-[#64748B]">UI Engineer</h3>
+                            <p class="text-[#64748B]">Full-time — $130,000–$170,000/year</p>
+                            <button class="btn  btn-sm  current-btn ">Not Applicable</button>
+                            <button  class="btn btn-outline btn-success border-none hidden hidden-btn shadow-sm">Interview</button>
+                            <button  class="btn btn-outline btn-error border-none hidden rejected-btn shadow-sm">Rejected</button>
+                            <p class="text-[#323B49] text-[15px]">Design intuitive interfaces focused on usability, performance, and seamless streaming experiences across multiple devices.</p>
+
+                        </div>                        
+                        <div class="mt-6">
+                            <button id="interview" class="btn btn-outline btn-success">Interview</button>
+                            <button id="rejected" class="btn btn-outline btn-error">Rejected</button>
+                      </div>
+
+                    </div>
+                    <span class=""><button id="delete" class="btn"><i class="fa-solid fa-trash"></i></button></span>
+                    </div>
+                   
+                </div>
+                <!-- card seven -->
+                <div id="" class="card-body">
+                    <div id="card-seven" class="flex justify-between shadow-sm p-5 border rounded-sm">
+                    <div class="card-list ">
+                        <div class="card-info space-y-3">
+                            <h2 class="text-2xl text-[#002C5C] font-bold">IBM</h2>
+                            <h3 class="text-xl text-[#64748B]">Cloud Engineer</h3>
+                            <p class="text-[#64748B]">Full-time — $100,000–$130,000/year</p>
+                            <button class="btn  btn-sm  current-btn ">Not Applicable</button>
+                            <button  class="btn btn-outline btn-success border-none hidden hidden-btn shadow-sm">Interview</button>
+                            <button  class="btn btn-outline btn-error border-none hidden rejected-btn shadow-sm">Rejected</button>
+                            <p class="text-[#323B49] text-[15px]">Manage cloud infrastructure deployments, automate processes, and monitor systems to ensure availability and operational excellence.</p>
+
+                        </div>                        
+                        <div class="mt-6">
+                            <button id="interview" class="btn btn-outline btn-success">Interview</button>
+                            <button id="rejected" class="btn btn-outline btn-error">Rejected</button>
+                      </div>
+
+                    </div>
+                    <span class=""><button id="delete" class="btn"><i class="fa-solid fa-trash"></i></button></span>
+                    </div>
+                   
+                </div>
+                <!-- card eight -->
+                <div id="" class="card-body">
+                    <div id="card-eight" class="flex justify-between shadow-sm p-5 border rounded-sm">
+                    <div class="card-list ">
+                        <div class="card-info space-y-3">
+                            <h2 class="text-2xl text-[#002C5C] font-bold">Apple</h2>
+                            <h3 class="text-xl text-[#64748B]">iOS Developer</h3>
+                            <p class="text-[#64748B]">Full-time — $125,000–$160,000/year</p>
+                            <button class="btn  btn-sm  current-btn ">Not Applicable</button>
+                            <button  class="btn btn-outline btn-success border-none hidden hidden-btn shadow-sm">Interview</button>
+                            <button  class="btn btn-outline btn-error border-none hidden rejected-btn shadow-sm">Rejected</button>
+                            <p class="text-[#323B49] text-[15px]">Develop high-performance mobile applications, collaborate with product teams, and enhance user experiences through clean scalable code.</p>
 
                         </div>                        
                         <div class="mt-6">
@@ -169,7 +267,7 @@
 
         <!-- rejected card -->
         <input type="radio" name="my_tabs_3" class="h-auto px-8 py-3 tab checked:bg-[#3B82F6] checked:text-white font-semibold" aria-label="Rejected" />
-        <div id="rejected-card" class="tab-content bg-base-100 border-base-300 p-6">
+        <div id="rejected-card" class="tab-content bg-base-100 border-base-300 p-6 space-y-10">
              <div id="reject-no-jobs" class="reject-no-jobs space-y-2">
                 <span class="text-center flex justify-center items-center"><img src="./B13-A4-PH-Job-Tracker/jobs.png" alt=""></span>
                 <h2 class="text-center text-xl font-bold">No jobs available</h2>

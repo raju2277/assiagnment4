@@ -15,16 +15,13 @@ cardContainer.addEventListener('click',function(item){
             if(hiddenButton){
               hiddenButton.classList.remove('hidden');
               rejectButton.classList.add('hidden');
+              currentButton.classList.add('hidden')
               
             }
 
-             item.target.style.backgroundColor='yellow'
              const interviewParent= item.target.parentElement.parentElement.parentElement;
              //get the parrent id
-             console.log(interviewParent)
              const cardId=interviewParent.id;
-             console.log(cardId)
-             //check if the id exist
             //  const cardExist=interviewCard.querySelector("#"+cardId);
              if(!interviewCard.querySelector("#"+cardId)){
                 const cloneInterviewParent=interviewParent.cloneNode(true); 
@@ -48,8 +45,7 @@ cardContainer.addEventListener('click',function(item){
              }
              
         }
-        else if(item.target.id === "rejected"){
-             item.target.style.backgroundColor='green'  
+        else if(item.target.id === "rejected"){  
              //find the hidden buttton parents
             const cardList=item.target.closest(".card-list")
             //find the hidden button
@@ -125,10 +121,7 @@ interviewCardToggle.addEventListener('click',function(item){
 
        interviewCount();
        rejectedCount();
-        item.target.style.backgroundColor='red'
-
-
-        //button enable
+      //button enable
           const cardList=item.target.closest(".card-list")
         const hiddenButton=cardList.querySelector(".hidden-btn")
             const rejectButton=cardList.querySelector(".rejected-btn")
@@ -163,12 +156,10 @@ rejectedCardToggle.addEventListener('click',function(item){
             const rejectButton=cardList.querySelector(".rejected-btn")
             
               hiddenButton.classList.remove('hidden');
-              rejectButton.classList.add('hidden');
-              
-    
+              rejectButton.classList.add('hidden');   
     
     }
         
-       
+      
 }
  })

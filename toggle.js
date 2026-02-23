@@ -10,10 +10,12 @@ cardContainer.addEventListener('click',function(item){
             //find the hidden button
             const hiddenButton=cardList.querySelector(".hidden-btn")
             const rejectButton=cardList.querySelector(".rejected-btn")
+            const currentButton=cardList.querySelector(".current-btn")
             //interview button show
             if(hiddenButton){
               hiddenButton.classList.remove('hidden');
-              rejectButton.classList.add('hidden')
+              rejectButton.classList.add('hidden');
+              
             }
 
              item.target.style.backgroundColor='yellow'
@@ -53,11 +55,13 @@ cardContainer.addEventListener('click',function(item){
             //find the hidden button
             const hiddenButton=cardList.querySelector(".hidden-btn")
             const rejectButton=cardList.querySelector(".rejected-btn")
+            const currentButton=cardList.querySelector(".current-btn")
 
              //rejected button show & hide
              if(rejectButton){
               hiddenButton.classList.add('hidden');
               rejectButton.classList.remove('hidden')
+              currentButton.classList.add('hidden')
             }
             //rejected div append
             const rejectParent= item.target.parentElement.parentElement.parentElement;
@@ -84,6 +88,16 @@ cardContainer.addEventListener('click',function(item){
               const deleteParent= document.getElementById('delete-card');
                 deleteParent.appendChild(alrdyAvailable);
                 interviewCount();
+
+                //button show
+                const hiddenButton=cardList.querySelector(".hidden-btn")
+            const rejectButton=cardList.querySelector(".rejected-btn")
+
+             //rejected button show & hide
+             if(rejectButton){
+              hiddenButton.classList.add('hidden');
+              rejectButton.classList.remove('hidden')
+            }
              }
 
 
@@ -99,3 +113,71 @@ cardContainer.addEventListener('click',function(item){
         }
     }
 })
+
+
+//interview  section toggle
+const interviewCardToggle=document.getElementById('interview-card')
+interviewCardToggle.addEventListener('click',function(item){
+    if(item.target.matches('button')){
+        if(item.target.id === "rejected"){
+       const interviewParent= item.target.parentElement.parentElement.parentElement;
+       rejectedCard.appendChild(interviewParent);
+
+       interviewCount();
+       rejectedCount();
+        item.target.style.backgroundColor='red'
+
+
+        //button enable
+          const cardList=item.target.closest(".card-list")
+        const hiddenButton=cardList.querySelector(".hidden-btn")
+            const rejectButton=cardList.querySelector(".rejected-btn")
+            
+              hiddenButton.classList.add('hidden');
+              rejectButton.classList.remove('hidden');
+              }
+         else if(item.target.id === "delete"){
+           //rejected div append
+            const deleteParent= item.target.parentElement.parentElement.parentElement;
+             //get the parrent id
+             const deletedCard=Document.getElementById('delete-card')
+             deletedCard.appendChild(deleteParent);
+             interviewCount();
+             rejectedCount();
+           
+        }
+        
+        
+       
+}
+ })
+
+ //reject section toggle
+
+const rejectedCardToggle=document.getElementById('rejected-card')
+rejectedCardToggle.addEventListener('click',function(item){
+    if(item.target.matches('button')){
+        if(item.target.id === "interview"){
+
+       const interviewParent= item.target.parentElement.parentElement.parentElement;
+       interviewCard.appendChild(interviewParent);
+
+       interviewCount();
+       rejectedCount();
+       
+
+        //button enable
+          const cardList=item.target.closest(".card-list")
+        const hiddenButton=cardList.querySelector(".hidden-btn")
+            const rejectButton=cardList.querySelector(".rejected-btn")
+            
+              hiddenButton.classList.remove('hidden');
+              rejectButton.classList.add('hidden');
+              
+    
+    
+    }
+        
+       
+}
+ })
